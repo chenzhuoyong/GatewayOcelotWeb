@@ -1,0 +1,47 @@
+{
+  "name": "chaint-edpnext-gateway",
+  "version": "1.2.2",
+  "type": "module",
+  "module": "dist/chaint-edpnext-gateway.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "chenzhuoyong"
+  },
+  "description": "长泰EdpNext网关模块",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepublishOnly": "npm run build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.8.1",
+    "clipboard-polyfill": "^4.1.1",
+    "dayjs": "^1.11.13",
+    "element-plus": "^2.9.5",
+    "vue": "^3.5.13",
+    "vue-draggable-plus": "^0.6.0",
+    "vue-json-pretty": "^2.4.0",
+    "vue-router": "^4.5.0",
+    "chaint-edpnext-auth": "1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "mockjs": "^1.1.0",
+    "typescript": "~5.7.2",
+    "unplugin-auto-import": "^19.1.1",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vite-plugin-mock": "^3.0.2",
+    "vite-plugin-windicss": "^1.9.4",
+    "vue-tsc": "^2.2.4",
+    "windicss": "^3.5.6"
+  }
+}

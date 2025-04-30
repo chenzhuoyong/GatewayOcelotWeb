@@ -1,0 +1,6 @@
+.el-form-item__content .el-input,
+.el-select,
+.el-switch,
+.el-input-number {
+  width: 20rem !important;
+}
