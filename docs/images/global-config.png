@@ -1,0 +1,69 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .container { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    .text { fill: #606266; font-size: 14px; }
+    .label { fill: #606266; font-size: 14px; }
+    .input { fill: #ffffff; stroke: #dcdfe6; }
+    .tab { fill: #ffffff; }
+    .tab-active { fill: #409eff; }
+    .tab-text { font-size: 14px; }
+    .tab-text-active { fill: #ffffff; }
+    .switch { fill: #409eff; rx: 10; ry: 10; }
+    .switch-handle { fill: #ffffff; rx: 8; ry: 8; }
+  </style>
+
+  <g class="container" transform="translate(20, 20)">
+    <!-- 标签页 -->
+    <g transform="translate(0, 0)">
+      <rect width="100" height="40" class="tab-active"/>
+      <text x="20" y="25" class="tab-text tab-text-active">全局配置</text>
+      
+      <rect x="120" width="100" height="40" class="tab"/>
+      <text x="140" y="25" class="tab-text">热门配置</text>
+    </g>
+
+    <!-- 配置表单 -->
+    <g transform="translate(0, 60)">
+      <!-- 项目标识 -->
+      <g transform="translate(0, 0)">
+        <text class="label">项目标识</text>
+        <rect y="24" width="300" height="32" class="input"/>
+        <text x="10" y="45" class="text">pj1</text>
+      </g>
+
+      <!-- 项目名称 -->
+      <g transform="translate(400, 0)">
+        <text class="label">项目名称</text>
+        <rect y="24" width="300" height="32" class="input"/>
+        <text x="10" y="45" class="text">项目1</text>
+      </g>
+
+      <!-- 基础路径 -->
+      <g transform="translate(0, 80)">
+        <text class="label">基础路径</text>
+        <rect y="24" width="700" height="32" class="input"/>
+        <text x="10" y="45" class="text">http://localhost:5000</text>
+      </g>
+
+      <!-- 限流配置 -->
+      <g transform="translate(0, 160)">
+        <text class="label">启用限流配置</text>
+        <rect y="24" width="40" height="20" class="switch"/>
+        <circle cx="30" cy="34" r="8" class="switch-handle"/>
+
+        <rect x="60" y="24" width="200" height="32" class="input"/>
+        <text x="70" y="45" class="text">限流提示信息</text>
+
+        <rect x="280" y="24" width="100" height="32" class="input"/>
+        <text x="290" y="45" class="text">429</text>
+      </g>
+
+      <!-- 认证配置 -->
+      <g transform="translate(0, 240)">
+        <text class="label">认证提供者配置</text>
+        <rect y="24" width="300" height="32" class="input"/>
+        <text x="10" y="45" class="text">请输入认证提供者配置</text>
+      </g>
+    </g>
+  </g>
+</svg>

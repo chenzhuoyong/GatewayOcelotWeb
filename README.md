@@ -20,6 +20,20 @@ GatewayOcelotWeb 是一个基于 Vue3 + Vite 构建的 Ocelot 网关配置管理
   - 动态路由管理
   - 路由规则配置
 
+## 界面预览
+
+### 项目列表
+
+![项目列表](docs/images/project-list.png)
+
+### 全局配置
+
+![全局配置](docs/images/global-config.png)
+
+### 路由配置
+
+![路由配置](docs/images/route-config.png)
+
 ## 技术栈
 
 - 核心框架：Vue 3.5.x

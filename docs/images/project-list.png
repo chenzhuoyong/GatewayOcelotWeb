@@ -1,0 +1,67 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .table { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    .header { fill: #f5f7fa; }
+    .row { fill: #ffffff; }
+    .row:nth-child(even) { fill: #fafafa; }
+    .text { fill: #606266; font-size: 14px; }
+    .button { rx: 4; ry: 4; }
+    .button-text { fill: #ffffff; font-size: 12px; text-anchor: middle; dominant-baseline: middle; }
+    .edit { fill: #409eff; }
+    .delete { fill: #f56c6c; }
+    .publish { fill: #e6a23c; }
+    .history { fill: #67c23a; }
+  </style>
+  
+  <!-- 顶部操作栏 -->
+  <g transform="translate(20, 20)">
+    <rect width="200" height="32" rx="4" fill="#409eff"/>
+    <text x="100" y="20" class="button-text">新增</text>
+    
+    <rect x="220" width="200" height="32" rx="4" fill="#f56c6c"/>
+    <text x="320" y="20" class="button-text">删除</text>
+    
+    <rect x="440" width="200" height="32" rx="4" fill="#409eff"/>
+    <text x="540" y="20" class="button-text">查询</text>
+  </g>
+
+  <!-- 搜索栏 -->
+  <g transform="translate(20, 72)">
+    <rect width="400" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6"/>
+    <text x="16" y="20" class="text">项目名称</text>
+    
+    <rect x="440" width="400" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6"/>
+    <text x="456" y="20" class="text">项目编码</text>
+  </g>
+
+  <!-- 表格 -->
+  <g transform="translate(20, 124)" class="table">
+    <!-- 表头 -->
+    <rect width="1160" height="40" class="header"/>
+    <text x="40" y="25" class="text">项目名称</text>
+    <text x="440" y="25" class="text">项目编码</text>
+    <text x="840" y="25" class="text">操作</text>
+
+    <!-- 数据行 -->
+    <g transform="translate(0, 40)">
+      <rect width="1160" height="48" class="row"/>
+      <text x="40" y="30" class="text">123</text>
+      <text x="440" y="30" class="text">123</text>
+      
+      <!-- 操作按钮 -->
+      <g transform="translate(840, 8)">
+        <rect width="60" height="32" class="button edit"/>
+        <text x="30" y="16" class="button-text">编辑</text>
+        
+        <rect x="80" width="60" height="32" class="button delete"/>
+        <text x="110" y="16" class="button-text">删除</text>
+        
+        <rect x="160" width="60" height="32" class="button publish"/>
+        <text x="190" y="16" class="button-text">发布</text>
+        
+        <rect x="240" width="80" height="32" class="button history"/>
+        <text x="280" y="16" class="button-text">发布历史</text>
+      </g>
+    </g>
+  </g>
+</svg>

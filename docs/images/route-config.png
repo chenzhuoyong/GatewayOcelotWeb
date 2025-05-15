@@ -1,0 +1,84 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .container { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    .text { fill: #606266; font-size: 14px; }
+    .label { fill: #606266; font-size: 14px; }
+    .input { fill: #ffffff; stroke: #dcdfe6; }
+    .button { rx: 4; ry: 4; }
+    .button-text { fill: #ffffff; font-size: 12px; text-anchor: middle; dominant-baseline: middle; }
+    .primary { fill: #409eff; }
+    .danger { fill: #f56c6c; }
+    .switch { fill: #409eff; rx: 10; ry: 10; }
+    .switch-handle { fill: #ffffff; rx: 8; ry: 8; }
+    .select { fill: #ffffff; stroke: #dcdfe6; }
+  </style>
+
+  <g class="container" transform="translate(20, 20)">
+    <!-- 左侧路由列表 -->
+    <g transform="translate(0, 0)">
+      <rect width="200" height="40" class="primary"/>
+      <text x="100" y="25" class="button-text">新增路由</text>
+
+      <g transform="translate(0, 60)">
+        <rect width="200" height="40" class="input"/>
+        <text x="10" y="25" class="text">路由1</text>
+        <rect x="160" width="30" height="40" class="danger"/>
+        <text x="175" y="25" class="button-text">删除</text>
+      </g>
+
+      <g transform="translate(0, 110)">
+        <rect width="200" height="40" class="input"/>
+        <text x="10" y="25" class="text">路由2</text>
+        <rect x="160" width="30" height="40" class="danger"/>
+        <text x="175" y="25" class="button-text">删除</text>
+      </g>
+    </g>
+
+    <!-- 右侧配置表单 -->
+    <g transform="translate(220, 0)">
+      <!-- 路由名称 -->
+      <g transform="translate(0, 0)">
+        <text class="label">路由名称</text>
+        <rect y="24" width="300" height="32" class="input"/>
+        <text x="10" y="45" class="text">路由1</text>
+      </g>
+
+      <!-- 启用配置 -->
+      <g transform="translate(400, 0)">
+        <text class="label">启用配置</text>
+        <rect y="24" width="40" height="20" class="switch"/>
+        <circle cx="30" cy="34" r="8" class="switch-handle"/>
+      </g>
+
+      <!-- 下游配置 -->
+      <g transform="translate(0, 80)">
+        <text class="label">下游配置</text>
+        
+        <!-- 请求方式 -->
+        <rect y="24" width="100" height="32" class="select"/>
+        <text x="10" y="45" class="text">HTTP</text>
+
+        <!-- 下游路径模板 -->
+        <rect x="120" y="24" width="300" height="32" class="input"/>
+        <text x="130" y="45" class="text">/api/users/{everything}</text>
+
+        <!-- 上游路径模板 -->
+        <rect x="440" y="24" width="300" height="32" class="input"/>
+        <text x="450" y="45" class="text">/users/{everything}</text>
+      </g>
+
+      <!-- 下游主机 -->
+      <g transform="translate(0, 160)">
+        <text class="label">下游主机</text>
+        <rect y="24" width="200" height="32" class="input"/>
+        <text x="10" y="45" class="text">localhost</text>
+
+        <rect x="220" y="24" width="100" height="32" class="input"/>
+        <text x="230" y="45" class="text">5001</text>
+
+        <rect x="340" y="24" width="100" height="32" class="input"/>
+        <text x="350" y="45" class="text">1</text>
+      </g>
+    </g>
+  </g>
+</svg>
